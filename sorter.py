@@ -1,4 +1,4 @@
-"""script de organização de arquivos"""
+"""Script de organização de lotes de arquivos"""
 import os
 import shutil
 import sys
@@ -13,7 +13,7 @@ if not os.path.exists(DIRETORIO):
 # lista todos os arquivos no diretório
 arquivos = os.listdir(DIRETORIO)
 
-# conta quantos arquivos existem no diretório e subdiretórios
+# conta quantos arquivos existem no diretório
 total_arquivos = sum(len(arquivos) for _, _, arquivos in os.walk(DIRETORIO))
 
 # escreve o total de arquivos em um arquivo txt
