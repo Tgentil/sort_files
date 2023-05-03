@@ -5,7 +5,8 @@ Este script em Python tem como objetivo organizar arquivos em um determinado dir
 # Como usar
 
 1. Abra o arquivo organizador_nfce.py em uma ide.
-2. Na variável DIRETORIO, defina o diretório onde os arquivos serão coletados.
+2. Na Pasta data coloque seus arquivos a serem coletados
+2.1. Na variável DIRETORIO, defina o diretório onde os arquivos serão coletados.
 3. Na variável LOTE_SIZE, defina o tamanho do lote (quantos arquivos serão movidos por lote).
 4. Salve o arquivo e execute-o em seu terminal usando o comando python organizador_nfce.py.
 5. O script irá contar quantos arquivos existem no diretório, e escrever o total de arquivos em um arquivo de texto chamado total_arquivos.txt.
@@ -13,7 +14,17 @@ Este script em Python tem como objetivo organizar arquivos em um determinado dir
 
 # Dica
 
-Em :
+Coloque seus arquivos em :
+```python
+# define o diretório onde os arquivos serão coletados
+DIRETORIO = "./data"
+if not os.path.exists(DIRETORIO):
+    os.mkdir(DIRETORIO)
+```
+
+Ou então
+
+Utilize :
 ```python
 # define o diretório onde os arquivos serão coletados
 DIRETORIO = r"path\para_o_seu\folder"
@@ -35,6 +46,10 @@ lote_dir = f"./lotes/lote_{LOTE_COUNT}"
 2. A contagem de arquivos é feita antes do código mover os arquivos, caso você não se sinta seguro com o código, faça um backup dos arquivos antes de utilizalos e faça o relatório ser executado depois de mover os arquivos e não antes.
 
 3. Não fiz tratamento de erro, o código pode gerar algum erro caso você tenha arquivos corrompidos, iguais, ou com mesmo nome, entre outros casos.
+
+# Update 
+
+Agora o script está lendo arquivos dentro de subpastas também
 
 # Autor
 
