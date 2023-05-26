@@ -1,5 +1,8 @@
 ## Script de organização de arquivos
 
+ [![GitHub](https://img.shields.io/badge/Visit-My%20Profile-0891B2?style=flat-square&logo=github)](https://github.com/Tgentil)
+
+
 Este script em Python tem como objetivo organizar arquivos em um determinado diretório de acordo com um tamanho de lote pré-definido.
 
 # Como usar
